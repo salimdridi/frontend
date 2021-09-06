@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 import Pagination from "react-bootstrap/Pagination";
 import Alert from "react-bootstrap/Alert";
 
-const myDomain = "http://Re-SearchEngine.com";
+const myDomain = "https://blissful-easley-5975c8.netlify.app";
 const myLocalDomain = "http://localhost:5000";
 
 const Results = () => {
