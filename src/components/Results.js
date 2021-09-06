@@ -18,7 +18,7 @@ const Results = () => {
   useEffect(() => {
     const searchParams = new URLSearchParams(params);
     fetch(
-      `${myLocalDomain}/search?` + searchParams.toString() + `&page=${page}`
+      `${myDomain}/search?` + searchParams.toString() + `&page=${page}`
     )
       .then((res) => res.json())
       .then((res) => {
