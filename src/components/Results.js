@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 import Pagination from "react-bootstrap/Pagination";
 import Alert from "react-bootstrap/Alert";
 
-//const myDomain = "https://blissful-easley-5975c8.netlify.app";
+const myDomain = "https://re-searchengine.com";
 const myLocalDomain = "http://localhost:5000";
 
 const Results = () => {
@@ -18,7 +18,7 @@ const Results = () => {
   useEffect(() => {
     const searchParams = new URLSearchParams(params);
     fetch(
-      `${myLocalDomain}/search?` + searchParams.toString() + `&page=${page}`
+      `${myDomain}/search?` + searchParams.toString() + `&page=${page}`
     )
       .then((res) => res.json())
       .then((res) => {
