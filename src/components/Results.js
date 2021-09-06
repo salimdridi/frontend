@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 import Pagination from "react-bootstrap/Pagination";
 import Alert from "react-bootstrap/Alert";
 
-const myDomain = "https://backend-researchengine.herokuapp.com";
+const myDomain = "https://www.re-searchengine.com";
 const myLocalDomain = "http://localhost:5000";
 
 const Results = () => {
