@@ -7,7 +7,7 @@ import Pagination from "react-bootstrap/Pagination";
 import Alert from "react-bootstrap/Alert";
 
 const myDomain = "https://blissful-easley-5975c8.netlify.app";
-const myLocalDomain = "http://localhost:5000";
+const myLocalDomain = "https://backend-researchengine.herokuapp.com";
 
 const Results = () => {
   const [results, setResults] = useState([]);
@@ -18,7 +18,7 @@ const Results = () => {
   useEffect(() => {
     const searchParams = new URLSearchParams(params);
     fetch(
-      `${myDomain}/search?` + searchParams.toString() + `&page=${page}`
+      `${myLocalDomain}/search?` + searchParams.toString() + `&page=${page}`
     )
       .then((res) => res.json())
       .then((res) => {
