@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 import Pagination from "react-bootstrap/Pagination";
 import Alert from "react-bootstrap/Alert";
 
-const myDomain = "https://www.re-searchengine.com";
+const myDomain = "https://backend-researchengine.herokuapp.com";
 const myLocalDomain = "http://localhost:5000";
 
 const Results = () => {
@@ -18,7 +18,7 @@ const Results = () => {
   useEffect(() => {
     const searchParams = new URLSearchParams(params);
     fetch(
-      `${myDomain}/search?` + searchParams.toString() + `&page=${page}`
+      `${myLocalDomain}/search?` + searchParams.toString() + `&page=${page}`
     )
       .then((res) => res.json())
       .then((res) => {
